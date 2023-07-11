@@ -5,7 +5,7 @@ const init = () => {
     return JSON.parse(localStorage.getItem('todos')) || [];
 }
 
-export const useTodos = () => {   
+export const useTodos = () => {
   
     const [ todos, dispatch ] = useReducer( todoReducer, [], init );
 
